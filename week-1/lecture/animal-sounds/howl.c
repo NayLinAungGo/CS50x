@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 void howl(int n);
-
 int get_howl_length(void);
 
 int main (void)
@@ -10,8 +9,6 @@ int main (void)
 	int n = get_howl_length();
 	howl(n);
 }
-
-
 
 int get_howl_length(void)
 {
