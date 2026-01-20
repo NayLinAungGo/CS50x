@@ -75,3 +75,9 @@ Sessionx.vim
 tags
 # Persistent undo
 [._]*.un~
+
+# Vimspector
+*.vimspector-session
+*.vimspector-log
+*.vimspector-cache
+*.vimspector.json
