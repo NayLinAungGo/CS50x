@@ -19,30 +19,20 @@ int main(void)
 
 bool valid(string password)
 {
-	int flags[4] = {0}, (*checkers[4])(int) = {isupper, islower, isdigit, ispunct};
-	for (int i = 0, j = 0; password[i] != '\0'; i++)
+	int passed[4] = {0}, passed_total = 0;
+	// array of function pointer: return_type (*array_name[size])(input_type);
+	int (*checkers[4])(int) = {isupper, islower, isdigit, ispunct};
+	for (int i = 0; password[i] != '\0' && passed_total != 4; i++)
 	{
 		char c = password[i];
-		// TODO run checker[x][c] IF flag[x] != 0
-		if (flags[j] != 0)
+		for (int j = 0; j < 4; j++)
 		{
-			if (checkers[j](c))
+			// Don't check again if the check is already passed.
+			if (!passed[j] && checkers[j](c))
 			{
-				flags[j]++;
-				j++;
+				passed[j]++, passed_total++;
 			}
 		}
-		if (j = 4)
-		{
-			return true;
-		}
 	}
-	for (int i = 0; i <= 3; i++)
-	{
-		if (!flags[i])
-		{
-			return false;
-		}
-	}
-	return true;
+	return (passed_total == 4);
 }
