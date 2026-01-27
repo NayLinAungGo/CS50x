@@ -5,6 +5,8 @@ main() must be declared as:
 
     int main(int argc, string argv[])
     {   
+    // code
+    }
 
 ## argc (argument count)
 
