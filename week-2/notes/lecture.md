@@ -1,17 +1,17 @@
 # Lecture 2: Arrays
 
 * [Debugging](#debugging)
-* [2 Types of Errors](#2-types-of-errors)
+    * [2 Types of Errors](#2-types-of-errors)
 * [Compiling: 4 Stages of Compilation](#compiling-4-stages-of-compilation)
-* [Pre-processing](#pre-processing)
-* [Compiling](#compiling)
-* [Assembling](#assembling)
-* [Linking](#linking)
+    * [Pre-processing](#pre-processing)
+    * [Compiling](#compiling)
+    * [Assembling](#assembling)
+    * [Linking](#linking)
 * [Arrays](#arrays)
-* [Strings](#strings)
-* [String Length](#string-length)
+    * [Strings](#strings)
+    * [String Length](#string-length)
 * [Command-Line Arguments](#command-line-arguments)
-* [Exit Status](#exit-status)
+    * [Exit Status](#exit-status)
 
 ## Debugging
 
