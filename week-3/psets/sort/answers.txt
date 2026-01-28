@@ -1,0 +1,21 @@
+sort1 uses: Bubble sort
+
+How do you know?:
+* Very fast with sorted txt
+* Takes a significantly longer duration with reversed and even more with random txt
+Bubble sort's best case scenario is sorted text where it wouldn't need to make any changes.
+
+sort2 uses: Merge sort
+
+How do you know?:
+* Takes the least duration out of all sort programs with all txt
+Merge sort's performs the same in both best case and worst case scenarios
+and Merge is known to be the fastest sorter at θ(n log n) and sort2 is the fastest sorter out of all.
+
+
+sort3 uses: Selection sort
+
+How do you know?: 
+* Takes quite a long duration with all txt
+Selection sort's best and worst case scenarios are exactly the same.
+The Θ(n^2) appears to be at work here.
