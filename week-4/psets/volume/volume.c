@@ -33,9 +33,20 @@ int main(int argc, char *argv[])
 
     float factor = atof(argv[3]);
 
-    // TODO: Copy header from input file to output file
+    for (int i = 0; i <= HEADER_SIZE; i++)
+        // Get HEADER_SIZE long char from input then put it to output
+        fputc(fgetc(input), output);
 
-    // TODO: Read samples from input file and write updated data to output file
+    // Buffer for sample assumed to be 16 bit (2 bytes) signed value
+    int16_t sample;
+
+    // Read from buffer until it fails
+    while (fread(&sample, sizeof(int16_t), 1, input) != 0)
+    {
+        sample *= factor; // Multiply sample by factor
+        // Write from buffer to output
+        fwrite(&sample, sizeof(int16_t), 1, output);
+    }
 
     // Close files
     fclose(input);
